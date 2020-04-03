@@ -16,7 +16,8 @@ exports.create = (req, res) => {
   const grocery = {
     name: req.body.name,
     description: req.body.description,
-    image: req.body.image
+    image: req.body.image,
+    price: req.body.price,
   };
 
   // Save Grocery in the database
