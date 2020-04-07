@@ -6,12 +6,18 @@ module.exports = (sequelize, Sequelize) => {
     description: {
       type: Sequelize.STRING
     },
+    type: {
+      type: Sequelize.STRING
+    },
     image: {
       type: Sequelize.STRING
     },
     price: {
       type: Sequelize.DECIMAL(10, 2)
-    }
+    },
+    qty: {
+      type: Sequelize.INTEGER
+    },
   });
 
   return Grocery;
